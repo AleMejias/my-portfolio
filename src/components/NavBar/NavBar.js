@@ -6,6 +6,7 @@ LogoContainer,
 Menu, 
 MenuItem, 
 MenuItemLink, 
+MobileButtonColor,
 MobileIcon, 
 Wrapper } from "./NavBarStyles";
 
@@ -14,7 +15,7 @@ import { useWidth } from "../../hooks/useWidth";
 import { handleMobileView } from "../../handlers/handleMobileView";
 
 import Logo from "../../assets/logotype.png";
-import { /* FaAlignJustify , */FaPlus } from "react-icons/fa";
+import { /* FaAlignJustify , */FaPlus , FaSun , FaMoon } from "react-icons/fa";
 
 const NavBar = () => {
 
@@ -41,6 +42,7 @@ const NavBar = () => {
                 <MobileIcon
                     onClick={ () =>  handleMobileView( setMobileView , mobileView ) }
                     mobileView = {mobileView}
+                    title="Desplegar Menu"
                 >
                     <FaPlus/>
                 </MobileIcon>
@@ -62,14 +64,20 @@ const NavBar = () => {
                     </MenuItem>
                     <MenuItem>
                         <MenuItemLink>
-                            Herramientas
-                        </MenuItemLink>
-                    </MenuItem>
-                    <MenuItem>
-                        <MenuItemLink>
                             Contacto
                         </MenuItemLink>
                     </MenuItem>
+                    {/* <MenuItem> */}
+                        <MobileButtonColor>
+                            <span></span>
+                            {/* <span> */}
+                                <FaSun />
+                            {/* </span> */}
+                            {/* <span> */}
+                                <FaMoon />
+                            {/* </span> */}
+                        </MobileButtonColor>
+                    {/* </MenuItem> */}
 
 
                 </Menu>
