@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+import React , { useState , useEffect } from 'react';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import { useWidth } from './hooks/useWidth';
 
-function App() {
+const  App = () => {
   const [ themeMode , setThemeMode] = useState( false );
   const [ mobileView , setMobileView ] = useState( false );
   const [ widthScreen , setWidthScreen ] = useWidth();
