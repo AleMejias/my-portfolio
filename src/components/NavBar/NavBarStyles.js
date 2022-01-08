@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
-
 export const Header = styled.header`
     display: flex;
     justify-content: center;
-    background-color: #f8f8f8;
+    background: ${({theme,themeMode}) => 
+    themeMode ? theme.colors.dark : theme.colors.light};
     box-shadow: rgba(0 , 0  ,0 , 0.05) 0px 5px 10px;
-    color: #6E73F2;
+    color: ${({theme}) => theme.colors.lightBlue};
     font-family: 'Jockey One';
     height: 5rem;
     padding: 11px;
+    width: 100%;
 `;
 
 export const Wrapper = styled.div`
@@ -41,6 +42,9 @@ export const LogoContainer = styled.div`
 
 export const Menu = styled.ul`
     display: flex;
+    background-color: ${({theme , themeMode}) => 
+        themeMode ? theme.colors.dark : theme.colors.light
+    };
     justify-content: space-between;
     font-size: 1rem;
     list-style: none;
@@ -88,7 +92,7 @@ export const MenuItemLink = styled.a`
     &:before{
         content: "";
         display: block;
-        background-color: #1D1D4C;
+        background-color: ${({theme}) => theme.colors.darkBlue};
         bottom: 0;
         height: 2px;
         left: 0;
@@ -101,7 +105,7 @@ export const MenuItemLink = styled.a`
         width: 100%;
     }
     &:hover{
-        color: #1D1D4C;
+        color: ${({theme}) => theme.colors.darkBlue};
         font-size: 1.1rem;
     }
 `;
@@ -117,15 +121,17 @@ export const MobileIcon = styled.div`
 
         svg{
             font-size: 1.1rem;
-            color:#6E73F2;
+            color:${({theme}) => theme.colors.lightBlue};
             cursor:pointer;
             transition: 0.5s all ease;
             transform:${ ({mobileView}) => mobileView ? 'rotate(45deg)' : 'rotate(0deg)'};
         }
         span{
-        background-color: #6E73F2;
+        background-color: ${({theme}) => theme.colors.lightBlue};
         padding: 15px;
-        left: 0;
+        left: ${({themeMode}) => 
+            themeMode ? '32px' : '0'
+        };
         position: absolute;
         border-radius: 100px;
 
@@ -134,9 +140,11 @@ export const MobileIcon = styled.div`
 `;
 
 export const MobileButtonColor = styled.button`
-    border: 1px solid blue;
+    border: none;
     border-radius: 90px;
-    background-color: #131313;
+    background-color: ${({theme , themeMode}) => 
+        !themeMode ? theme.colors.dark : theme.colors.light
+    };
     outline: none;
     position: relative;
     display: flex;
@@ -144,30 +152,28 @@ export const MobileButtonColor = styled.button`
     width: 4rem;
     height: 2rem;
     align-self: flex-end;
-    opacity: .8 ;
+    opacity:${({themeMode}) => 
+        !themeMode ? .8 : 1
+    };
 
-/*     & > span{
-        display: flex;
-        background-color: none;
-        color: white;
-        height: 1.9rem;
-        line-height: 1.9rem;
-        width: 1.9rem;
-    } */
     svg{
         align-self: center;
         margin: 0 4px;
-        color: #ffff18;
+        color: ${({theme}) => theme.colors.yellow};
         font-size: 1.1rem;
         cursor: pointer;
 
     }
     span{
-        background-color: #6E73F2;
+        background-color: ${({theme}) => theme.colors.lightBlue};
         padding: 15px;
-        left: 0;
+        right: ${({theme,themeMode}) => 
+            themeMode ? theme.position.darkLocation : theme.position.lightLocation
+        };
+        transition: 0.5s all ease;
         position: absolute;
         border-radius: 100px;
+        box-shadow: 0.5px 0px 1.5px 0.5px ${({theme}) => theme.colors.light};
 
     }
 

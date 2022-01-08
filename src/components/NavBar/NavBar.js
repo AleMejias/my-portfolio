@@ -13,6 +13,7 @@ Wrapper } from "./NavBarStyles";
 
 import { useWidth } from "../../hooks/useWidth";
 import { handleMobileView } from "../../handlers/handleMobileView";
+import { handleThemeMode  } from "../../handlers/handleThemeMode";
 
 import Logo from "../../assets/logotype.png";
 import { /* FaAlignJustify , */FaPlus , FaSun , FaMoon } from "react-icons/fa";
@@ -20,6 +21,7 @@ import { /* FaAlignJustify , */FaPlus , FaSun , FaMoon } from "react-icons/fa";
 const NavBar = () => {
 
     const [ mobileView , setMobileView ] = useState( false );
+    const [ themeMode , setThemeMode] = useState( false );
     const [ widthScreen , setWidthScreen ] = useWidth();
 
 
@@ -34,7 +36,9 @@ const NavBar = () => {
     },[ widthScreen ,setWidthScreen] )
 
     return (
-        <Header>
+        <Header 
+        themeMode = {themeMode}
+        >
             <Wrapper>
                 <LogoContainer>
                     <img src={ Logo } alt="Alejandro Mejias" title="Volver al incio"/>
@@ -46,7 +50,10 @@ const NavBar = () => {
                 >
                     <FaPlus/>
                 </MobileIcon>
-                <Menu mobileView = {mobileView}>
+                <Menu 
+                    mobileView = {mobileView}
+                    themeMode = { themeMode }
+                >
                     <MenuItem>
                         <MenuItemLink>
                             Inicio
@@ -68,13 +75,19 @@ const NavBar = () => {
                         </MenuItemLink>
                     </MenuItem>
                     {/* <MenuItem> */}
-                        <MobileButtonColor>
+                        <MobileButtonColor
+                            themeMode = { themeMode }
+                        >
                             <span></span>
                             {/* <span> */}
-                                <FaSun />
+                                <FaSun 
+                                    onClick={ () => handleThemeMode( setThemeMode , themeMode )}
+                                />
                             {/* </span> */}
                             {/* <span> */}
-                                <FaMoon />
+                                <FaMoon 
+                                    onClick={ () => handleThemeMode( setThemeMode , themeMode )}
+                                />
                             {/* </span> */}
                         </MobileButtonColor>
                     {/* </MenuItem> */}
