@@ -1,4 +1,4 @@
-import React , { useEffect, useState } from "react";
+import React  from "react";
 
 import { 
 Header, 
@@ -10,30 +10,15 @@ MobileButtonColor,
 MobileIcon, 
 Wrapper } from "./NavBarStyles";
 
-
-import { useWidth } from "../../hooks/useWidth";
 import { handleMobileView } from "../../handlers/handleMobileView";
 import { handleThemeMode  } from "../../handlers/handleThemeMode";
 
 import Logo from "../../assets/logotype.png";
-import { /* FaAlignJustify , */FaPlus , FaSun , FaMoon } from "react-icons/fa";
+import { FaPlus , FaMoon } from "react-icons/fa";
+import {FiSun} from "react-icons/fi";
 
-const NavBar = () => {
+const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
 
-    const [ mobileView , setMobileView ] = useState( false );
-    const [ themeMode , setThemeMode] = useState( false );
-    const [ widthScreen , setWidthScreen ] = useWidth();
-
-
-
-    useEffect( () => {
-        window.addEventListener("resize", () =>{
-            setWidthScreen(window.innerWidth);
-            if(widthScreen > 767){
-                setMobileView( false )
-            }
-        })
-    },[ widthScreen ,setWidthScreen] )
 
     return (
         <Header 
@@ -80,7 +65,7 @@ const NavBar = () => {
                         >
                             <span></span>
                             {/* <span> */}
-                                <FaSun 
+                                <FiSun 
                                     onClick={ () => handleThemeMode( setThemeMode , themeMode )}
                                 />
                             {/* </span> */}

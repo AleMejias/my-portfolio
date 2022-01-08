@@ -4,12 +4,14 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
     background: ${({theme,themeMode}) => 
-    themeMode ? theme.colors.dark : theme.colors.light};
-    box-shadow: rgba(0 , 0  ,0 , 0.05) 0px 5px 10px;
+        themeMode ? theme.colors.dark : theme.colors.light
+    };
+    box-shadow :rgba(0 , 0  ,0 , 0.05) 0px 5px 10px;
     color: ${({theme}) => theme.colors.lightBlue};
     font-family: 'Jockey One';
     height: 5rem;
     padding: 11px;
+    transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
     width: 100%;
 `;
 
@@ -49,16 +51,17 @@ export const Menu = styled.ul`
     font-size: 1rem;
     list-style: none;
     position: relative;
+    transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
     width: 80%;
     @media screen and ( max-width: 768px ) {
         flex-direction: column;
+        justify-content: space-evenly;
+        height: 80vh;
+        left: ${ ({mobileView}) => mobileView ? '0' : '-100%' };
         position: absolute;
         top: 5rem;
-        left: ${ ({mobileView}) => mobileView ? '0' : '-100%' };
+        transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
         width: 100%;
-        height: 80vh;
-        justify-content: space-evenly;
-        transition: 0.5s all ease;
     }
 
     @media screen and ( max-width : 481px ){
@@ -86,8 +89,8 @@ export const MenuItem = styled.li`
 
 export const MenuItemLink = styled.a`
     cursor: pointer;
-    transition: .5s all ease;
     position: relative;
+    transition: .5s all ease;
 
     &:before{
         content: "";
@@ -123,49 +126,49 @@ export const MobileIcon = styled.div`
             font-size: 1.1rem;
             color:${({theme}) => theme.colors.lightBlue};
             cursor:pointer;
-            transition: 0.5s all ease;
             transform:${ ({mobileView}) => mobileView ? 'rotate(45deg)' : 'rotate(0deg)'};
+            transition: 0.5s all ease;
         }
         span{
-        background-color: ${({theme}) => theme.colors.lightBlue};
-        padding: 15px;
-        left: ${({themeMode}) => 
-            themeMode ? '32px' : '0'
-        };
-        position: absolute;
-        border-radius: 100px;
-
-    }
+            background-color: ${({theme}) => theme.colors.lightBlue};
+            border-radius: 100px;
+            left: ${({themeMode}) => 
+                themeMode ? '32px' : '0'
+            };
+            padding: 15px;
+            position: absolute;
+        }
     }
 `;
 
 export const MobileButtonColor = styled.button`
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    background-color: ${({theme , themeMode}) => 
+        !themeMode ? theme.colors.dark : theme.colors.lightBlue
+    };
     border: none;
     border-radius: 90px;
-    background-color: ${({theme , themeMode}) => 
-        !themeMode ? theme.colors.dark : theme.colors.light
-    };
-    outline: none;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    width: 4rem;
     height: 2rem;
-    align-self: flex-end;
     opacity:${({themeMode}) => 
         !themeMode ? .8 : 1
     };
+    outline: none;
+    position: relative;
+    width: 4rem;
 
     svg{
-        align-self: center;
-        margin: 0 4px;
         color: ${({theme}) => theme.colors.yellow};
-        font-size: 1.1rem;
+        align-self: center;
         cursor: pointer;
-
+        margin: 0 4px;
+        font-size: 1.2rem;
     }
     span{
-        background-color: ${({theme}) => theme.colors.lightBlue};
+        background-color: ${({theme , themeMode}) => 
+            themeMode ? theme.colors.light : theme.colors.lightBlue 
+        };
         padding: 15px;
         right: ${({theme,themeMode}) => 
             themeMode ? theme.position.darkLocation : theme.position.lightLocation
