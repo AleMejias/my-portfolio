@@ -1,4 +1,5 @@
 import React , { useState , useEffect } from 'react';
+import { GlobalStyles } from './components/GlobalStyles';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import { useWidth } from './hooks/useWidth';
@@ -18,6 +19,9 @@ const  App = () => {
 },[ widthScreen ,setWidthScreen] )
   return (
     <>
+    <GlobalStyles 
+      themeMode = { themeMode }
+    />
       <NavBar 
         themeMode = { themeMode }
         setThemeMode = { setThemeMode }
@@ -26,6 +30,8 @@ const  App = () => {
       />
       <Home 
         themeMode = { themeMode }
+        mobileView = { mobileView }
+        widthScreen = { widthScreen }
       />
     </>
   );

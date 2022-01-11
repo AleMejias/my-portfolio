@@ -3,15 +3,10 @@ import styled from "styled-components";
 export const Header = styled.header`
     display: flex;
     justify-content: center;
-    background: ${({theme,themeMode}) => 
-        themeMode ? theme.colors.dark : theme.colors.light
-    };
-    box-shadow :rgba(0 , 0  ,0 , 0.05) 0px 5px 10px;
     color: ${({theme}) => theme.colors.lightBlue};
     font-family: 'Jockey One';
     height: 5rem;
     padding: 11px;
-    transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
     width: 100%;
 `;
 
@@ -44,15 +39,12 @@ export const LogoContainer = styled.div`
 
 export const Menu = styled.ul`
     display: flex;
-    background-color: ${({theme , themeMode}) => 
-        themeMode ? theme.colors.dark : theme.colors.light
-    };
     justify-content: space-between;
     font-size: 1rem;
-    list-style: none;
     position: relative;
-    transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
     width: 80%;
+    padding:  5px 5px;
+    margin: 0;
     @media screen and ( max-width: 768px ) {
         flex-direction: column;
         justify-content: space-evenly;
@@ -60,7 +52,7 @@ export const Menu = styled.ul`
         left: ${ ({mobileView}) => mobileView ? '0' : '-100%' };
         position: absolute;
         top: 5rem;
-        transition: ${({themeMode}) => !themeMode ? '0.5s all ease' : 'none'};
+        transition: 0.5s all ease;
         width: 100%;
     }
 
@@ -88,6 +80,7 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuItemLink = styled.a`
+    color: ${({theme}) => theme.colors.lightBlue};
     cursor: pointer;
     position: relative;
     transition: .5s all ease;
@@ -184,6 +177,6 @@ export const MobileButtonColor = styled.button`
     position: absolute;
     display: flex;
     top: 15px;
-    right: 5px;
+    right: 7px;
     }
 `;
