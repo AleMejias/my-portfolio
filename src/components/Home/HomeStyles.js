@@ -57,6 +57,7 @@ export const TitleContainer = styled.div.attrs(({className}) => ({
     }
 
     @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
         & > div:nth-child(1),
         & > div:nth-child(2){
             text-align : center;

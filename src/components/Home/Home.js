@@ -8,18 +8,18 @@ const Home = ( { themeMode , mobileView , widthScreen} ) => {
         <Wrapper
         themeMode = { themeMode }
         mobileView = { mobileView }
-        className={'container mt-5'}
+        className={'container mt-5 mb-5'}
         >
             <Row
-                className = {'row'}
+                className = {'row mt-3'}
             >
                 <TitleContainer
-                    className = {`col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mt-3 
+                    className = {`col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5  
                     animate__animated ${widthScreen < 768 ? 'animate__backInDown' : 'animate__backInLeft'}`}
                 >
                     <div>
                         <h1>Front End Developer</h1>
-                        <h4>Con pasión en aprender</h4>
+                        <h4>En constante aprendizaje.</h4>
                     </div>
                     <div>
                     <a 
@@ -33,7 +33,7 @@ const Home = ( { themeMode , mobileView , widthScreen} ) => {
 
                 </TitleContainer>
                 <ImageContainer
-                    className = {'col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 mt-4'}
+                    className = {'col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7'}
                 >
                     <img src={HomeImage} alt = "Me encantan las Tecnologías"/>
 

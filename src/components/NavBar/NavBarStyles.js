@@ -88,7 +88,9 @@ export const MenuItemLink = styled.a`
     &:before{
         content: "";
         display: block;
-        background-color: ${({theme}) => theme.colors.darkBlue};
+        background-color: ${({theme , themeMode}) => 
+            themeMode ? theme.colors.light : theme.colors.darkBlue
+        };
         bottom: 0;
         height: 2px;
         left: 0;
@@ -101,7 +103,9 @@ export const MenuItemLink = styled.a`
         width: 100%;
     }
     &:hover{
-        color: ${({theme}) => theme.colors.darkBlue};
+        color: ${({theme,themeMode}) => 
+            themeMode ? theme.colors.light : theme.colors.darkBlue 
+        };
         font-size: 1.1rem;
     }
 `;

@@ -40,22 +40,30 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                     themeMode = { themeMode }
                 >
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink
+                            themeMode = { themeMode }
+                        >
                             Inicio
                         </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink
+                            themeMode = { themeMode }
+                        >
                             Sobre mí
                         </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink
+                            themeMode = { themeMode }
+                        >
                             Proyectos
                         </MenuItemLink>
                     </MenuItem>
                     <MenuItem>
-                        <MenuItemLink>
+                        <MenuItemLink
+                            themeMode = { themeMode }
+                        >
                             Contacto
                         </MenuItemLink>
                     </MenuItem>
