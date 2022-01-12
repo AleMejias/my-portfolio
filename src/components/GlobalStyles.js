@@ -8,8 +8,17 @@ export const GlobalStyles = createGlobalStyle`
         transition: ${({themeMode}) => 
             !themeMode ? '0.5s all ease' : "" 
         };
+        section{
+            display: ${({mobileView}) => 
+                mobileView ? 'none' : 'block'  
+            };
+        }
     }
-    p,h1,h4{
+    p,
+    h1,
+    h2,
+    h4,
+    span{
             color: ${({theme , themeMode}) =>
             themeMode ? theme.colors.light : theme.colors.dark
         };

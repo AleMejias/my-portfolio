@@ -8,7 +8,7 @@ const Home = ( { themeMode , mobileView , widthScreen} ) => {
         <Wrapper
         themeMode = { themeMode }
         mobileView = { mobileView }
-        className={'container mt-5 mb-5'}
+        className={'container mt-5 '}
         >
             <Row
                 className = {'row mt-3'}

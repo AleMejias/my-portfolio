@@ -11,11 +11,7 @@ const opacity = keyframes`
 export const Wrapper = styled.section.attrs(({className}) => ({
     className : className
 }))`
-    display: ${({mobileView}) => 
-        mobileView ? 'none' : 'flex'  
-    };
-    height: 100vh;
-    width: 100%;
+    /*  */
 `;
 export const Row = styled.div.attrs(({className}) => ({
     className : className

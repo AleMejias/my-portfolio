@@ -9,13 +9,17 @@ const theme= {
         lightBlue : '#6E73F2',
         yellow:'#ffff18'
     },
-    
+    figure:{
+        light: 'rgba(110 , 115 ,242 , 0.8)',
+        dark : 'rgba(19 , 19 , 19 , 1)'
+    }
+    ,
     position:{
         lightLocation : '35px',
         darkLocation : '0px'
     },
     shadows:{
-        lightShadow: 'rgba(0 , 0  ,0 , 0.05) 0px 5px 10px;',
+        lightShadow: 'rgba(0 , 0  ,0 , 0.05) 0px 5px 10px',
         darkShadow: 'rgb(25, 25 ,25 , 1) 0px 5px 10px',
     }
 };

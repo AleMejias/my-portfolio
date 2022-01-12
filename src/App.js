@@ -24,6 +24,7 @@ const  App = () => {
     <>
       <GlobalStyles 
         themeMode = { themeMode }
+        mobileView = { mobileView }
       />
       <NavBar 
         themeMode = { themeMode }
