@@ -59,7 +59,7 @@ const About = (  {themeMode} )  => {
                         Actualmente no he podido desempeñar un rol Front End a nivel laboral, pero eso para mí no ha sido una excusa para no estudiar y capacitarme por mi cuenta. Me mantengo construyendo pequeñas aplicaciones web y siguiendo un plan propio de estudios que a la larga me permita poner en práctica los conocimientos que vengo adquiriendo.
                     </p>
                     <p>
-                        Mi objetivo es poder encontrar un lugar que confié en mis capacidades y junto con la oportunidad para capacitarme en nuevas herramientas, me permitan integrar y plasmar los conocimientos adquiridos en las tareas que se me asignen trayendo consigo resultados positivos. 
+                        Mi objetivo es poder encontrar un lugar que confíes en mis capacidades y junto con la oportunidad para capacitarme en nuevas herramientas, me permitan integrar y plasmar los conocimientos adquiridos en las tareas que se me asignen trayendo consigo resultados positivos. 
                     </p>
                 </CoverLetterContainer>
             </Row>

@@ -6,6 +6,8 @@ import { useWidth } from './hooks/useWidth';
 import Home from './components/Home/Home';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+
 
 const  App = () => {
   const [ themeMode , setThemeMode] = useState( false );
@@ -38,6 +40,9 @@ const  App = () => {
         widthScreen = { widthScreen }
       />
       <About 
+        themeMode = { themeMode }
+      />
+      <Projects
         themeMode = { themeMode }
       />
     </>
