@@ -30,6 +30,16 @@ export const Row = styled.div.attrs(({className}) => ({
         position: relative;
         z-index: 100;
     }
+    &.certification{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media screen  and (max-width:768px) {
+        &.certification{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 `;
 
 export const TitleContainer = styled.div.attrs(({className}) => ({
@@ -98,5 +108,37 @@ export const SkillsCard = styled.div.attrs(({className}) => ({
     }
     img{
         width: 4rem;
+    }
+`;
+
+export const CertificationContainer = styled.div.attrs(({className}) => ({
+    className : className
+}))`
+    background-color: ${({theme,themeMode}) => 
+        themeMode ? theme.figure.dark : theme.figure.light 
+    };
+    border-radius: 5%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 8px 9px 6px -8px ${({theme , themeMode}) =>
+        themeMode ? theme.colors.light : theme.colors.dark
+    };
+    & > p{
+        font-family: 'Jockey One';
+        font-weight: 500;
+        font-size: 1rem
+    }
+    & > a{
+        color: ${({theme}) => theme.colors.light};
+        font-size: .9rem;
+    }
+    a:hover{
+        color: ${({theme,themeMode}) => 
+            themeMode ? theme.colors.lightBlue : theme.colors.dark 
+        };
+        font-size: 1rem;
+        transition: 0.3s all ease;
+        
     }
 `;

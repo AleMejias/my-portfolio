@@ -5,7 +5,10 @@ Row,
 TitleContainer,
 PictureContainer,
 CoverLetterContainer,
-SkillsCard} from './AboutStyles';
+SkillsCard,
+CertificationContainer} from './AboutStyles';
+
+import {BsBoxArrowUpRight} from 'react-icons/bs';
 
 import PictureCover from '../../assets/Ale.jpg';
 import htmlIcon from '../../assets/icons/html.png';
@@ -50,13 +53,13 @@ const About = (  {themeMode} )  => {
                     className={ 'col-12 col-sm-12 col-md-8' }
                 >
                     <p>
-                    Hola, mi nombre es Alejandro Mejias y me contento saber que llegaste hasta este punto. Soy un apasionado, autodidacta y comprometido desarrollador web que hoy día se dedica más al desarrollo Front End. El área de programación es nueva para mí ya que me sumergí en ella hace un poco más de dos años, y si bien puede parecer mucho tiempo, no me canso de aprender y sentirme contento con los avances que frecuentemente obtengo.
+                        Hola, mi nombre es Alejandro Mejias y me contenta saber que llegaste hasta este punto. Soy un apasionado, autodidacta y comprometido desarrollador web que hoy día se dedica más al desarrollo Front End. El área de programación es nueva para mí ya que me sumergí en ella hace un poco más de dos años, y si bien puede parecer mucho o poco tiempo, no me canso de aprender y tampoco de sentirme contento con los avances que frecuentemente obtengo.
                     </p>
                     <p>
-                    Actualmente no he podido desempeñar un rol Front End dentro de una empresa, pero eso para mí no ha sido una excusa para no estudiar y capacitarme por mi cuenta. Me mantengo construyendo pequeñas aplicaciones web y siguiendo un plan propio de estudios que a la larga me permita poner en práctica los conocimientos que vengo adquiriendo.
+                        Actualmente no he podido desempeñar un rol Front End a nivel laboral, pero eso para mí no ha sido una excusa para no estudiar y capacitarme por mi cuenta. Me mantengo construyendo pequeñas aplicaciones web y siguiendo un plan propio de estudios que a la larga me permita poner en práctica los conocimientos que vengo adquiriendo.
                     </p>
                     <p>
-                    Mi objetivo es poder encontrar un lugar que confié en mi talento y junto con la oportunidad para capacitarme en nuevas herramientas, me permitan integrar y plasmar los conocimientos adquiridos en las tareas que se me asignen trayendo consigo resultados positivos. 
+                        Mi objetivo es poder encontrar un lugar que confié en mis capacidades y junto con la oportunidad para capacitarme en nuevas herramientas, me permitan integrar y plasmar los conocimientos adquiridos en las tareas que se me asignen trayendo consigo resultados positivos. 
                     </p>
                 </CoverLetterContainer>
             </Row>
@@ -66,75 +69,115 @@ const About = (  {themeMode} )  => {
                 themeMode = { themeMode }
             >
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>HTML</span>
                     <img src={htmlIcon} alt="HTML" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>CSS</span>
                     <img src={cssIcon} alt="CSS" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>JAVASCRIPT</span>
                     <img src={javascriptIcon} alt="JAVASCRIPT" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>REACT</span>
                     <img src={reactIcon} alt="REACT" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>jQuery</span>
                     <img src={jqueryIcon} alt="jQuery" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>SASS</span>
                     <img src={sassIcon} alt="SASS" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>GIT</span>
                     <img src={gitIcon} alt="GIT" />
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>NPM</span>
                     <img src={npmIcon} alt="NPM" /> 
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>BOOTSTRAP</span>
                     <img src={bootstrapIcon} alt="BOOTSTRAP" /> 
                 </SkillsCard>
                 <SkillsCard
-                    className={ 'col-12 col-sm-3 col-md-2' }
+                    className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>POSTMAN</span>
                     <img src={postmanIcon} alt="POSTMAN" /> 
                 </SkillsCard>
+            </Row>
+            <h2>Certificaciones</h2>
+            <Row
+                className={ 'row mt-3 p-3 certification' }
+            >
+                <CertificationContainer
+                    className={ 'col-8 col-sm-4 col-md-3' }
+                    themeMode = { themeMode }
+                >
+                    <p>Desarrollo Web</p>
+                    <a 
+                        href='https://www.coderhouse.com/certificados/6081aff117669c00967843f3'
+                        target='blank'
+                    >
+                        <BsBoxArrowUpRight></BsBoxArrowUpRight>
+                    </a>
+                </CertificationContainer>
+                <CertificationContainer
+                    className={ 'col-8 col-sm-4 col-md-3' }
+                    themeMode = { themeMode }
+                >
+                    <p>Javascript</p>
+                    <a 
+                        href='https://www.coderhouse.com/certificados/60d4d4290b602e0010f9b0d6'
+                        target='blank'    
+                    >
+                        <BsBoxArrowUpRight></BsBoxArrowUpRight>
+                    </a>
+                </CertificationContainer>
+                <CertificationContainer
+                    className={ 'col-8 col-sm-4 col-md-3' }
+                    themeMode = { themeMode }
+                >   
+                    <p>React Js</p>
+                    <a href='https://www.coderhouse.com/certificados/6143cebcffd1ec004e6aea87'
+                        target='blank'
+                    >
+                        <BsBoxArrowUpRight></BsBoxArrowUpRight>
+                    </a>
+                </CertificationContainer>
             </Row>
         </Wrapper>
     );
