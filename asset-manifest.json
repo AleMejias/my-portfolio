@@ -1,18 +1,23 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.7ed86210.css",
-    "main.js": "/my-portfolio/static/js/main.6905dc39.js",
+    "main.js": "/my-portfolio/static/js/main.bbfddca9.js",
+    "static/media/blackjack.png": "/my-portfolio/static/media/blackjack.eb915e00249c983c995d.png",
+    "static/media/my-gif.png": "/my-portfolio/static/media/my-gif.48917e87cf86aa13ff9f.png",
     "static/media/logotype.png": "/my-portfolio/static/media/logotype.c8077f4ca912f5ee066c.png",
     "static/media/CV_MejiasAlejandro.pdf": "/my-portfolio/static/media/CV_MejiasAlejandro.bc115a9b6a4fe87e8975.pdf",
+    "static/media/deccgarden.png": "/my-portfolio/static/media/deccgarden.29ca4ddd31f7b9f0172c.png",
     "static/media/image-background.png": "/my-portfolio/static/media/image-background.3f9fa2b41ed8b1857510.png",
+    "static/media/itech.png": "/my-portfolio/static/media/itech.7132050403ad655626a6.png",
     "static/media/Ale.jpg": "/my-portfolio/static/media/Ale.acf6b3c1ebab38ee88d0.jpg",
+    "static/media/to-do.png": "/my-portfolio/static/media/to-do.45ced20e560f83150ead.png",
     "static/media/react.png": "/my-portfolio/static/media/react.581289b9c91fd811832c.png",
     "index.html": "/my-portfolio/index.html",
     "main.7ed86210.css.map": "/my-portfolio/static/css/main.7ed86210.css.map",
-    "main.6905dc39.js.map": "/my-portfolio/static/js/main.6905dc39.js.map"
+    "main.bbfddca9.js.map": "/my-portfolio/static/js/main.bbfddca9.js.map"
   },
   "entrypoints": [
     "static/css/main.7ed86210.css",
-    "static/js/main.6905dc39.js"
+    "static/js/main.bbfddca9.js"
   ]
 }
