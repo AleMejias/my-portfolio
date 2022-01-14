@@ -68,6 +68,13 @@ export const LinksContainer = styled.div.attrs(({className}) => ({
     justify-content: space-evenly;
     padding: 5px;
     & > a{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        color: ${({theme,themeMode}) =>
+            themeMode ? theme.colors.light : theme.colors.dark 
+        };
+    }
+    a:hover{
+        color: ${({theme}) => theme.colors.lightBlue };
+        transition: 0.4s all ease;
     }
 `;

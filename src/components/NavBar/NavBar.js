@@ -12,6 +12,7 @@ Wrapper } from "./NavBarStyles";
 
 import { handleMobileView } from "../../handlers/handleMobileView";
 import { handleThemeMode  } from "../../handlers/handleThemeMode";
+import { handleScroll } from "../../handlers/handleScroll";
 
 import Logo from "../../assets/logotype.png";
 import { FaPlus , FaMoon } from "react-icons/fa";
@@ -19,14 +20,20 @@ import {FiSun} from "react-icons/fi";
 
 const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
 
-
     return (
         <Header 
         themeMode = {themeMode}
         >
             <Wrapper>
                 <LogoContainer>
-                    <img src={ Logo } alt="Alejandro Mejias" title="Volver al incio"/>
+                    <img 
+                        src={ Logo } alt="Alejandro Mejias" title="Volver al incio"
+                        onClick={ () => {
+                            handleScroll("home");
+                            setMobileView(!mobileView);
+                        } 
+                    }
+                    />
                 </LogoContainer>
                 <MobileIcon
                     onClick={ () =>  handleMobileView( setMobileView , mobileView ) }
@@ -41,7 +48,13 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                 >
                     <MenuItem>
                         <MenuItemLink
+                            id="home"
                             themeMode = { themeMode }
+                            onClick={ () => {
+                                handleScroll("home");
+                                setMobileView(!mobileView);
+                            } 
+                        }
                         >
                             Inicio
                         </MenuItemLink>
@@ -49,6 +62,11 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                     <MenuItem>
                         <MenuItemLink
                             themeMode = { themeMode }
+                            onClick={ () => {
+                                handleScroll("sobre-mi");
+                                setMobileView(!mobileView);
+                            } 
+                        }
                         >
                             Sobre mí
                         </MenuItemLink>
@@ -56,6 +74,11 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                     <MenuItem>
                         <MenuItemLink
                             themeMode = { themeMode }
+                            onClick={ () => {
+                                handleScroll("proyectos");
+                                setMobileView(!mobileView);
+                            } 
+                        }
                         >
                             Proyectos
                         </MenuItemLink>
@@ -63,6 +86,11 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                     <MenuItem>
                         <MenuItemLink
                             themeMode = { themeMode }
+                            onClick={ () => {
+                                handleScroll("contacto");
+                                setMobileView(!mobileView);
+                            } 
+                        }
                         >
                             Contacto
                         </MenuItemLink>

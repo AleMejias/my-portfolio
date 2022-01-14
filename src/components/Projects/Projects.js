@@ -36,11 +36,13 @@ const Projects  = ({themeMode}) => {
                     >
                         <h5 className="card-title">My Gif App</h5>
                         <p className="card-text">Construida con la finalidad de poder tener disponible en todo momento los memes mas relevantes para alegrarte el día.</p>
-                        <LinksContainer>
-                            <a href="asas" className="btn btn rounded" title='Visitar Página'>
+                        <LinksContainer
+                            themeMode = { themeMode }
+                        >
+                            <a href="https://practical-benz-67413b.netlify.app/" className="btn btn rounded" title='Visitar Página'>
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="asas" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/my-gif-app" className="btn btn rounded" title='Ver código'>
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -58,11 +60,13 @@ const Projects  = ({themeMode}) => {
                     >
                         <h5 className="card-title">ITech</h5>
                         <p className="card-text">Tienda de celulares ficticia creada para presentar como proyecto final en el curso de JavaScript dictado por Coderhouse.</p>
-                        <LinksContainer>
-                            <a href="asas" className="btn btn rounded" title='Visitar Página'>
+                        <LinksContainer
+                            themeMode = { themeMode }
+                        >
+                            <a href="https://alemejias.github.io/ITech/" className="btn btn rounded" title='Visitar Página'>
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="asas" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/ITech" className="btn btn rounded" title='Ver código'>
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -80,11 +84,13 @@ const Projects  = ({themeMode}) => {
                     >
                         <h5 className="card-title">To Do App</h5>
                         <p className="card-text">Esta pequeña aplicación te permite poder organizar tus tareas diarias y al mismo tiempo poder interactuar con su estado.</p>
-                        <LinksContainer>
-                            <a href="asas" className="btn btn rounded" title='Visitar Página'>
+                        <LinksContainer
+                            themeMode = { themeMode }
+                        >
+                            <a href="https://nostalgic-jackson-68d4e7.netlify.app/" className="btn btn rounded" title='Visitar Página'>
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="asas" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/to-do-app" className="btn btn rounded" title='Ver código'>
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -101,12 +107,14 @@ const Projects  = ({themeMode}) => {
                         themeMode = { themeMode }
                     >
                         <h5 className="card-title">Casino Webjias</h5>
-                        <p className="card-text">Con el fin de recrear uno de mis juegos favoritos de mi infancia, puedes jugar partidas de BlackJack vs la computadora.</p>
-                        <LinksContainer>
-                            <a href="asas" className="btn btn rounded" title='Visitar Página'>
+                        <p className="card-text">Con el fin de recrear uno de mis juegos favoritos de infancia y practicar un poco de código, ahora puedes probar tu suerte vs la computadora.</p>
+                        <LinksContainer
+                            themeMode = { themeMode }
+                        >
+                            <a href="https://alemejias.github.io/blackjack.github.io/" className="btn btn rounded" title='Visitar Página'>
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="asas" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/blackjack.github.io" className="btn btn rounded" title='Ver código'>
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -124,11 +132,13 @@ const Projects  = ({themeMode}) => {
                     >
                         <h5 className="card-title">DeccGarden</h5>
                         <p className="card-text">Representa una tienda online ficticia de productos para el hogar creada para presentar como proyecto final en el curso de Desarrollo Web dictado por Coderhouse.</p>
-                        <LinksContainer>
-                            <a href="asas" className="btn rounded" title='Visitar Página'>
+                        <LinksContainer
+                            themeMode = { themeMode }
+                        >
+                            <a href="https://alemejias.github.io/DeccGarden_Alejandro/" className="btn rounded" title='Visitar Página'>
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="asas" className="btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/DeccGarden_Alejandro" className="btn rounded" title='Ver código'>
                                 <BsGithub></BsGithub>
                             </a>
 

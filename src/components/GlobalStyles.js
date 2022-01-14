@@ -8,10 +8,11 @@ export const GlobalStyles = createGlobalStyle`
         transition: ${({themeMode}) => 
             !themeMode ? '0.5s all ease' : "" 
         };
-        section{
-            display: ${({mobileView}) => 
+        section,footer{
+/*             display: ${({mobileView}) => 
                 mobileView ? 'none' : 'block'  
-            };
+            }; */
+            z-index : -1;
         }
     }
     p,
@@ -23,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
             themeMode ? theme.colors.light : theme.colors.dark
         };
     }
-    header{
+    header,footer{
         box-shadow: ${({theme , themeMode}) => 
             themeMode ? theme.shadows.darkShadow : theme.shadows.lightShadow 
         };

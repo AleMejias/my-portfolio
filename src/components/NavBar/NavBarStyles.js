@@ -4,10 +4,17 @@ export const Header = styled.header`
     display: flex;
     justify-content: center;
     color: ${({theme}) => theme.colors.lightBlue};
+    background-color: ${({theme , themeMode}) => 
+            themeMode ? theme.colors.dark : theme.colors.light 
+    };
     font-family: 'Jockey One';
     height: 5rem;
     padding: 11px;
     width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
 `;
 
 export const Wrapper = styled.div`
@@ -46,12 +53,15 @@ export const Menu = styled.ul`
     padding:  5px 5px;
     margin: 0;
     @media screen and ( max-width: 768px ) {
+        position: absolute;
+        left: ${ ({mobileView}) => mobileView ? '0' : '-100%' };
+        top: 5rem;
         flex-direction: column;
         justify-content: space-evenly;
+        background-color: ${({theme , themeMode}) => 
+            themeMode ? theme.colors.dark : theme.colors.light 
+        };
         height: 80vh;
-        left: ${ ({mobileView}) => mobileView ? '0' : '-100%' };
-        position: absolute;
-        top: 5rem;
         transition: 0.5s all ease;
         width: 100%;
     }
