@@ -6,6 +6,16 @@ export const Footer = styled.footer.attrs(({className}) => ({
     background-color: ${({theme , themeMode}) => 
         themeMode ? theme.colors.dark : theme.colors.light 
     };
+    & > h2{
+        color: ${({theme , themeMode}) => 
+            themeMode ? theme.colors.light : theme.colors.lightBlue
+        };
+        font-family: 'Jockey One';
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 50px 0;
+        text-align: center;
+    }
 `;
 
 export const Row = styled.div.attrs(({className}) => ({

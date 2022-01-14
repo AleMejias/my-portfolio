@@ -56,10 +56,10 @@ const About = (  {themeMode} )  => {
                         Hola, mi nombre es Alejandro Mejias y me contenta saber que llegaste hasta este punto. Soy un apasionado, autodidacta y comprometido desarrollador web que hoy día se dedica más al desarrollo Front End. El área de programación es nueva para mí ya que me sumergí en ella hace un poco más de dos años, y si bien puede parecer mucho o poco tiempo, no me canso de aprender y tampoco de sentirme contento con los avances que frecuentemente obtengo.
                     </p>
                     <p>
-                        Actualmente no he podido desempeñar un rol Front End a nivel laboral, pero eso para mí no ha sido una excusa para no estudiar y capacitarme por mi cuenta. Me mantengo construyendo pequeñas aplicaciones web y siguiendo un plan propio de estudios que a la larga me permita poner en práctica los conocimientos que vengo adquiriendo.
+                        Actualmente no he podido desempeñar un rol Front End a nivel laboral, pero eso para mí no ha sido una excusa para no estudiar y capacitarme por mi cuenta. Me mantengo construyendo pequeñas aplicaciones web y siguiendo un plan propio de estudios, que a la larga me permita poner en práctica los conocimientos que vengo adquiriendo.
                     </p>
                     <p>
-                        Mi objetivo es poder encontrar un lugar que confíes en mis capacidades y junto con la oportunidad para capacitarme en nuevas herramientas, me permitan integrar y plasmar los conocimientos adquiridos en las tareas que se me asignen trayendo consigo resultados positivos. 
+                        Mi objetivo es poder encontrar un lugar que confíe en mis capacidades y me ofrezca la oportunidad para capacitarme en nuevas herramientas para de esta manera poder integrar los conocimientos adquiridos en las tareas que se me asignen diariamente. 
                     </p>
                 </CoverLetterContainer>
             </Row>

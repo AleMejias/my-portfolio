@@ -1,13 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-    body{
+    body,ul{
         background-color: ${({theme , themeMode}) => 
             themeMode ? theme.colors.dark : theme.colors.light 
         };
-        transition: ${({themeMode}) => 
-            !themeMode ? '0.5s all ease' : "" 
-        };
+
         section,footer{
 /*             display: ${({mobileView}) => 
                 mobileView ? 'none' : 'block'  

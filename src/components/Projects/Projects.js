@@ -39,10 +39,10 @@ const Projects  = ({themeMode}) => {
                         <LinksContainer
                             themeMode = { themeMode }
                         >
-                            <a href="https://practical-benz-67413b.netlify.app/" className="btn btn rounded" title='Visitar Página'>
+                            <a href="https://practical-benz-67413b.netlify.app/" className="btn btn rounded" title='Visitar Página' target="blank">
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="https://github.com/AleMejias/my-gif-app" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/my-gif-app" className="btn btn rounded" title='Ver código' target="blank">
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -63,10 +63,10 @@ const Projects  = ({themeMode}) => {
                         <LinksContainer
                             themeMode = { themeMode }
                         >
-                            <a href="https://alemejias.github.io/ITech/" className="btn btn rounded" title='Visitar Página'>
+                            <a href="https://alemejias.github.io/ITech/" className="btn btn rounded" title='Visitar Página' target="blank">
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="https://github.com/AleMejias/ITech" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/ITech" className="btn btn rounded" title='Ver código' target="blank">
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -87,10 +87,10 @@ const Projects  = ({themeMode}) => {
                         <LinksContainer
                             themeMode = { themeMode }
                         >
-                            <a href="https://nostalgic-jackson-68d4e7.netlify.app/" className="btn btn rounded" title='Visitar Página'>
+                            <a href="https://nostalgic-jackson-68d4e7.netlify.app/" className="btn btn rounded" title='Visitar Página' target="blank">
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="https://github.com/AleMejias/to-do-app" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/to-do-app" className="btn btn rounded" title='Ver código' target="blank">
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -111,10 +111,10 @@ const Projects  = ({themeMode}) => {
                         <LinksContainer
                             themeMode = { themeMode }
                         >
-                            <a href="https://alemejias.github.io/blackjack.github.io/" className="btn btn rounded" title='Visitar Página'>
+                            <a href="https://alemejias.github.io/blackjack.github.io/" className="btn btn rounded" title='Visitar Página' target="blank">
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="https://github.com/AleMejias/blackjack.github.io" className="btn btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/blackjack.github.io" className="btn btn rounded" title='Ver código' target="blank">
                                 <BsGithub></BsGithub>
                             </a>
 
@@ -135,10 +135,10 @@ const Projects  = ({themeMode}) => {
                         <LinksContainer
                             themeMode = { themeMode }
                         >
-                            <a href="https://alemejias.github.io/DeccGarden_Alejandro/" className="btn rounded" title='Visitar Página'>
+                            <a href="https://alemejias.github.io/DeccGarden_Alejandro/" className="btn rounded" title='Visitar Página' target="blank">
                                 <IoArrowRedo></IoArrowRedo>
                             </a>
-                            <a href="https://github.com/AleMejias/DeccGarden_Alejandro" className="btn rounded" title='Ver código'>
+                            <a href="https://github.com/AleMejias/DeccGarden_Alejandro" className="btn rounded" title='Ver código' target="blank">
                                 <BsGithub></BsGithub>
                             </a>
 

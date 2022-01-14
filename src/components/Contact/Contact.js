@@ -13,6 +13,7 @@ const Contact = ({themeMode}) => {
             className = { 'container mt-5' }
             themeMode = { themeMode }
         >
+            <h2>Contacto</h2>
             <Row
                 className={ 'row' }
             >
@@ -23,7 +24,7 @@ const Contact = ({themeMode}) => {
                     <a href="mailto:alejandro20452@gmail.com" alt= "Enviar Email" title='Correo electrónico'>
                         <GoMail />
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-mejias/" alt= "Enviar Email" title='LinkedIn'>
+                    <a href="https://www.linkedin.com/in/alejandro-mejias/" alt= "Enviar Email" title='LinkedIn' target="blank">
                         <FaLinkedinIn />
                     </a>
                 </IconContainer>

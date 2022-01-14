@@ -3,7 +3,7 @@ import { scroller } from 'react-scroll';
 
 const scrollType = {
     duration: 150,
-    smooth: "easeOutCubic",
+    smooth: "easeOutQuint",
     activeClass:"active",
     offset: -115
  };

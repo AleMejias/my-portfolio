@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Header = styled.header`
     display: flex;
     justify-content: center;
@@ -58,11 +59,12 @@ export const Menu = styled.ul`
         top: 5rem;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: ${({theme , themeMode}) => 
-            themeMode ? theme.colors.dark : theme.colors.light 
-        };
         height: 80vh;
-        transition: 0.5s all ease;
+        transition:left 0.5s;
+        -moz-transition:left 0.5s;
+        -ms-transition:left 0.5s;
+        -webkit-transition:left 0.5s;
+        -o-transition:left 0.5s;
         width: 100%;
     }
 
