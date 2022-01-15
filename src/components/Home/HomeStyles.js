@@ -11,7 +11,16 @@ const opacity = keyframes`
 export const Wrapper = styled.section.attrs(({className}) => ({
     className : className
 }))`
-    /*  */
+    & > h2{
+        color: ${({theme , themeMode}) => 
+        themeMode ? theme.colors.light : theme.colors.lightBlue
+    };
+        font-family: 'Jockey One';
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        margin: 50px 0;
+        text-align: center;
+    }
 `;
 export const Row = styled.div.attrs(({className}) => ({
     className : className
@@ -25,6 +34,7 @@ export const TitleContainer = styled.div.attrs(({className}) => ({
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     & > div:nth-child(1){
         padding: 5px 5px;
         h4{
@@ -33,9 +43,9 @@ export const TitleContainer = styled.div.attrs(({className}) => ({
             font-weight: 500;
         }
         h1{
-            font-weight: 600;
             font-family: 'Jockey One';
             font-size: 3.1rem;
+            font-weight: 600;
             letter-spacing: 1px;
         }
     }
@@ -45,7 +55,7 @@ export const TitleContainer = styled.div.attrs(({className}) => ({
             background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
             border: none;
             border-radius: 5px;
-            color: ${({theme}) => theme.colors.light};
+            color: #f8f8f8;
             cursor: pointer;
             font-size: .9rem;
             padding: 12px;

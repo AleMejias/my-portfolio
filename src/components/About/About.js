@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
 Wrapper , 
 Row, 
@@ -8,7 +9,7 @@ CoverLetterContainer,
 SkillsCard,
 CertificationContainer} from './AboutStyles';
 
-import {BsBoxArrowUpRight} from 'react-icons/bs';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 import PictureCover from '../../assets/Ale.jpg';
 import htmlIcon from '../../assets/icons/html.png';
@@ -46,7 +47,10 @@ const About = (  {themeMode} )  => {
                     className={ 'col-12 col-sm-12 col-md-4' }
                 >
                     <div>
-                        <img src={PictureCover} alt="Alejandro Mejias"/>
+                        <img 
+                            src={ PictureCover } 
+                            alt="Alejandro Mejias"
+                        />
                     </div>
                 </PictureContainer>
                 <CoverLetterContainer
@@ -73,70 +77,99 @@ const About = (  {themeMode} )  => {
                     themeMode = { themeMode }
                 >
                     <span>HTML</span>
-                    <img src={htmlIcon} alt="HTML" />
+                    <img 
+                        src={ htmlIcon } 
+                        alt="HTML" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>CSS</span>
-                    <img src={cssIcon} alt="CSS" />
+                    <img 
+                        src={ cssIcon } 
+                        alt="CSS" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>JAVASCRIPT</span>
-                    <img src={javascriptIcon} alt="JAVASCRIPT" />
+                    <img src={ javascriptIcon } 
+                    alt="JAVASCRIPT" 
+                />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>REACT</span>
-                    <img src={reactIcon} alt="REACT" />
+                    <img 
+                        src={ reactIcon } 
+                        alt="REACT" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>jQuery</span>
-                    <img src={jqueryIcon} alt="jQuery" />
+                    <img 
+                        src={ jqueryIcon } 
+                        alt="jQuery" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>SASS</span>
-                    <img src={sassIcon} alt="SASS" />
+                    <img 
+                        src={ sassIcon } 
+                        alt="SASS" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>GIT</span>
-                    <img src={gitIcon} alt="GIT" />
+                    <img 
+                        src={ gitIcon } 
+                        alt="GIT" 
+                    />
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>NPM</span>
-                    <img src={npmIcon} alt="NPM" /> 
+                    <img 
+                        src={ npmIcon } 
+                        alt="NPM" 
+                    /> 
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>BOOTSTRAP</span>
-                    <img src={bootstrapIcon} alt="BOOTSTRAP" /> 
+                    <img 
+                        src={ bootstrapIcon } 
+                        alt="BOOTSTRAP" 
+                    /> 
                 </SkillsCard>
                 <SkillsCard
                     className={ 'col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2' }
                     themeMode = { themeMode }
                 >
                     <span>POSTMAN</span>
-                    <img src={postmanIcon} alt="POSTMAN" /> 
+                    <img 
+                        src={ postmanIcon } 
+                        alt="POSTMAN" 
+                    /> 
                 </SkillsCard>
             </Row>
             <h2>Certificaciones</h2>
@@ -151,6 +184,7 @@ const About = (  {themeMode} )  => {
                     <a 
                         href='https://www.coderhouse.com/certificados/6081aff117669c00967843f3'
                         target='blank'
+                        title='Certificado en Desarrollo Web'
                     >
                         <BsBoxArrowUpRight></BsBoxArrowUpRight>
                     </a>
@@ -162,7 +196,8 @@ const About = (  {themeMode} )  => {
                     <p>Javascript</p>
                     <a 
                         href='https://www.coderhouse.com/certificados/60d4d4290b602e0010f9b0d6'
-                        target='blank'    
+                        target='blank'
+                        title='Certificado en JavaScript'    
                     >
                         <BsBoxArrowUpRight></BsBoxArrowUpRight>
                     </a>
@@ -172,8 +207,10 @@ const About = (  {themeMode} )  => {
                     themeMode = { themeMode }
                 >   
                     <p>React Js</p>
-                    <a href='https://www.coderhouse.com/certificados/6143cebcffd1ec004e6aea87'
+                    <a 
+                        href='https://www.coderhouse.com/certificados/6143cebcffd1ec004e6aea87'
                         target='blank'
+                        title='Certificado en React Js'
                     >
                         <BsBoxArrowUpRight></BsBoxArrowUpRight>
                     </a>

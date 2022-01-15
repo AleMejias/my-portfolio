@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { 
 Footer,
 Row,
@@ -21,10 +22,19 @@ const Contact = ({themeMode}) => {
                     className={ 'col-md-12' }
                     themeMode = { themeMode } 
                 >
-                    <a href="mailto:alejandro20452@gmail.com" alt= "Enviar Email" title='Correo electrónico'>
+                    <a 
+                        href="mailto:alejandro20452@gmail.com" 
+                        alt= "Enviar Email" 
+                        title='Correo electrónico'
+                    >
                         <GoMail />
                     </a>
-                    <a href="https://www.linkedin.com/in/alejandro-mejias/" alt= "Enviar Email" title='LinkedIn' target="blank">
+                    <a 
+                        href="https://www.linkedin.com/in/alejandro-mejias/" 
+                        alt= "Enviar Email" 
+                        title='LinkedIn' 
+                        target="blank"
+                    >
                         <FaLinkedinIn />
                     </a>
                 </IconContainer>

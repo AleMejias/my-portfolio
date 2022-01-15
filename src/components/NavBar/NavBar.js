@@ -15,19 +15,22 @@ import { handleThemeMode  } from "../../handlers/handleThemeMode";
 import { handleScroll } from "../../handlers/handleScroll";
 
 import Logo from "../../assets/logotype.png";
+
 import { FaPlus , FaMoon } from "react-icons/fa";
-import {FiSun} from "react-icons/fi";
+import { FiSun } from "react-icons/fi";
 
 const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
 
     return (
         <Header 
-        themeMode = {themeMode}
+            themeMode = {themeMode}
         >
             <Wrapper>
                 <LogoContainer>
                     <img 
-                        src={ Logo } alt="Alejandro Mejias" title="Volver al incio"
+                        src={ Logo } 
+                        alt="Alejandro Mejias" 
+                        title="Volver al incio"
                         onClick={ () => {
                             handleScroll("home");
                             setMobileView(!mobileView);
@@ -36,7 +39,10 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                     />
                 </LogoContainer>
                 <MobileIcon
-                    onClick={ () =>  handleMobileView( setMobileView , mobileView ) }
+                    onClick={ () => {
+                            handleMobileView( setMobileView , mobileView );
+                        }
+                    }
                     mobileView = {mobileView}
                     title="Desplegar Menu"
                 >
@@ -48,7 +54,6 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                 >
                     <MenuItem>
                         <MenuItemLink
-                            id="home"
                             themeMode = { themeMode }
                             onClick={ () => {
                                 handleScroll("home");
@@ -95,25 +100,23 @@ const NavBar = ( {themeMode,setThemeMode,mobileView,setMobileView} ) => {
                             Contacto
                         </MenuItemLink>
                     </MenuItem>
-                    {/* <MenuItem> */}
-                        <MobileButtonColor
-                            themeMode = { themeMode }
-                        >
-                            <span></span>
-                            {/* <span> */}
-                                <FiSun 
-                                    onClick={ () => handleThemeMode( setThemeMode , themeMode )}
-                                />
-                            {/* </span> */}
-                            {/* <span> */}
-                                <FaMoon 
-                                    onClick={ () => handleThemeMode( setThemeMode , themeMode )}
-                                />
-                            {/* </span> */}
-                        </MobileButtonColor>
-                    {/* </MenuItem> */}
-
-
+                    <MobileButtonColor
+                        themeMode = { themeMode }
+                    >
+                        <span></span>
+                        <FiSun 
+                            onClick={ () => {
+                                handleThemeMode( setThemeMode , themeMode );
+                            }
+                        }
+                        />
+                        <FaMoon 
+                            onClick={ () => {
+                                handleThemeMode( setThemeMode , themeMode );
+                            }
+                        }
+                        />
+                    </MobileButtonColor>
                 </Menu>
             </Wrapper>
         </Header>

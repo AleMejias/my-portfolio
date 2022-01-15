@@ -3,10 +3,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.section.attrs(({className}) => ({
     className : className
 }))`
-    /* 94% 6% 100% 0% / 24% 47% 53% 76% 
-         90% 10% 86% 14% / 20% 82% 18% 80%
-         94% 6% 96% 4% / 13% 86% 14% 87%  
-    */
     & > h2{
         color: ${({theme , themeMode}) => 
             themeMode ? theme.colors.light : theme.colors.lightBlue
@@ -26,14 +22,16 @@ export const Row = styled.div.attrs(({className}) => ({
         background-color: ${({theme,themeMode}) =>
             themeMode ? theme.figure.dark : theme.figure.light
         };
-        border-radius:96% 4% 97% 3% / 8% 90% 10% 92% ;
+        border-radius:96% 4% 97% 3% / 8% 90% 10% 92%;
         position: relative;
         z-index: 100;
     }
+
     &.certification{
         display: flex;
         justify-content: space-evenly;
     }
+
     @media screen  and (max-width:768px) {
         &.certification{
             flex-direction: column;
@@ -61,6 +59,7 @@ export const PictureContainer = styled.div.attrs(({className}) => ({
         padding: 5px;
         position: absolute;
         z-index: 1;
+
         img{
             border-radius: 50%;
             box-shadow : 0px 0px 2px 2px #f8f8f8;
@@ -74,10 +73,10 @@ export const PictureContainer = styled.div.attrs(({className}) => ({
         & > div{
             left: 0;
             right: 10%;
-        img{
-            width: 150px;
+            img{
+                width: 150px;
+            }
         }
-    }
     }
 `;
 export const CoverLetterContainer = styled.div.attrs(({className}) => ({
@@ -91,6 +90,9 @@ export const CoverLetterContainer = styled.div.attrs(({className}) => ({
 
     @media screen and (max-width: 768px){
         margin-top: 200px;
+        & > p{
+            font-size: 1rem;
+        }
     }
 `;
 
@@ -126,12 +128,12 @@ export const CertificationContainer = styled.div.attrs(({className}) => ({
     };
     & > p{
         font-family: 'Jockey One';
+        font-size: 1.1rem;
         font-weight: 500;
-        font-size: 1rem
     }
     & > a{
-        color: ${({theme}) => theme.colors.light};
-        font-size: .9rem;
+        color: #f8f8f8;
+        font-size: 1rem;
     }
     a:hover{
         color: ${({theme,themeMode}) => 

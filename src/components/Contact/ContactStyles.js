@@ -42,6 +42,7 @@ export const IconContainer = styled.div.attrs(({className}) => ({
         };
         font-size: 1.2rem;
         height: 45px;
+        line-height: 30px;
         margin: 0 0.5rem;
         padding: 4px;
         text-align: center;
@@ -57,5 +58,14 @@ export const IconContainer = styled.div.attrs(({className}) => ({
             !themeMode ? theme.colors.light : theme.colors.darkBlue
         };
         transition: 0.3s all ease;
+    }
+
+    @media screen and (max-width: 576px){
+        & > a{
+        font-size: 1.4rem;
+        height: 50px;
+        line-height: 31px;
+        width: 50px;
+    }
     }
 `;

@@ -7,9 +7,6 @@ export const GlobalStyles = createGlobalStyle`
         };
 
         section,footer{
-/*             display: ${({mobileView}) => 
-                mobileView ? 'none' : 'block'  
-            }; */
             z-index : -1;
         }
     }

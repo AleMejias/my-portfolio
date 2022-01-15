@@ -11,13 +11,12 @@ export const Wrapper = styled.section.attrs(({className}) => ({
         font-size: 1.8rem;
         letter-spacing: 1px;
         margin: 50px 0;
-       text-align: center;
+        text-align: center;
     }
 `;
 export const Row = styled.div.attrs(({className}) => ({
     className : className
 }))`
-    /*  */
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -27,18 +26,12 @@ export const CardContainer = styled.div.attrs(({className}) => ({
 }))`
     display: flex;
     justify-content: center;
-    /*  */
     background: ${({theme,themeMode}) =>
             themeMode ? theme.figure.dark : ""  
     };
     & > div {
         width: 90%;
-        overflow-x: hidden;
-        img{
-            height: min-content;
-        }
     }
-    /* border:1px solid blue; */
 `;
 export const CardBody = styled.div.attrs(({className}) => ({
     className : className
@@ -51,9 +44,6 @@ export const CardBody = styled.div.attrs(({className}) => ({
         font-size: 1.4rem;
     }
     & > p{
-/*         color: ${({theme,themeMode}) =>
-            themeMode ? theme.colors.light : theme.colors.dark 
-        }; */
         font-family: 'Roboto';
         font-size: 1rem;
         font-weight: 500;
@@ -63,18 +53,25 @@ export const CardBody = styled.div.attrs(({className}) => ({
 export const LinksContainer = styled.div.attrs(({className}) => ({
     className : className
 }))`
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     padding: 5px;
     & > a{
-        font-size: 1.5rem;
         color: ${({theme,themeMode}) =>
             themeMode ? theme.colors.light : theme.colors.dark 
         };
+        font-size: 1.5rem;
     }
     a:hover{
         color: ${({theme}) => theme.colors.lightBlue };
         transition: 0.4s all ease;
+    }
+    @media screen and (max-width: 576px){
+        & > a{
+            color: ${({theme,themeMode}) =>
+                themeMode ? theme.colors.light : theme.colors.dark 
+            };
+            font-size: 1.6rem;
+        }
     }
 `;
